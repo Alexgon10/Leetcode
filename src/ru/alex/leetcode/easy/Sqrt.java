@@ -2,6 +2,8 @@ package ru.alex.leetcode.easy;
 
 /**
  * https://leetcode.com/problems/sqrtx/
+ *
+ * https://ru.algorithmica.org/cs/numerical/newton/
  */
 public class Sqrt {
     public int mySqrt(int x) {
