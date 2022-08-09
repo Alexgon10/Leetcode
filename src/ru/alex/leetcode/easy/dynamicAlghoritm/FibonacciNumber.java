@@ -1,4 +1,4 @@
-package ru.alex.leetcode.easy;
+package ru.alex.leetcode.easy.dynamicAlghoritm;
 
 /**
  * https://leetcode.com/problems/fibonacci-number/

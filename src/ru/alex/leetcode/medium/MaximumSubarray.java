@@ -5,8 +5,6 @@ package ru.alex.leetcode.medium;
  */
 public class MaximumSubarray {
     public int maxSubArray(int[] nums) {
-        // int left =nums.length-1;
-        // int right = nums.length-1;
         int maxSum = 0;
         int maxNum = nums[nums.length - 1];
         int currentSum = 0;
@@ -16,13 +14,10 @@ public class MaximumSubarray {
             if (nums[i] > maxNum) {
                 maxNum = nums[i];
             }
-
             if (currentSum < 0) {
                 currentSum = 0;
-                continue;
             } else if (currentSum > maxSum) {
                 maxSum = currentSum;
-                continue;
             }
         }
         return maxSum > 0 ? maxSum : maxNum;
