@@ -1,14 +1,15 @@
 package ru.alex.leetcode;
 
+import ru.alex.leetcode.easy.FindTargetIndicesAfterSortingArray;
 import ru.alex.leetcode.easy.ValidPalindrome;
-import ru.alex.leetcode.easy.dynamicAlghoritm.IsSubsequence;
-import ru.alex.leetcode.easy.dynamicAlghoritm.PascalsTriangle;
+
+import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
-        ValidPalindrome pascalsTriangle = new ValidPalindrome();
-        System.out.println(pascalsTriangle.isPalindrome("A man, a plan, a canal: Panama"));
-
+        FindTargetIndicesAfterSortingArray findTargetIndicesAfterSortingArray = new FindTargetIndicesAfterSortingArray();
+        int[] nums = new int[]{1};
+        System.out.println(findTargetIndicesAfterSortingArray.targetIndices(nums,1));
     }
 }
