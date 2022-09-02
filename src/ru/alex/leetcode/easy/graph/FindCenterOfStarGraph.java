@@ -16,15 +16,4 @@ public class FindCenterOfStarGraph {
         }
         return -1;
     }
-
-    public static void main(String[] args) {
-        List<Stack<Integer>> list = new ArrayList<>();
-        Stack<Integer> stack = new Stack<>();
-        stack.push(5);
-        stack.push(7);
-        list.add(stack);
-        System.out.println(list);
-        stack.pop();
-        System.out.println(list);
-    }
 }
