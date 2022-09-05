@@ -2,7 +2,6 @@ package ru.alex.leetcode.easy.graph;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 public class FindCenterOfStarGraph {
     public int findCenter(int[][] edges) {
