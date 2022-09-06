@@ -22,4 +22,26 @@ public class PalindromeNumber {
         }
         return true;
     }
+
+    public static boolean isPalindrome2(int x) {
+       StringBuilder sb = new StringBuilder(String.valueOf(x));
+
+        System.out.println("-- " + sb.toString());
+        System.out.println("-- " + sb.reverse().toString());
+        System.out.println("-- " + String.valueOf(x).equals(sb.reverse().toString()));
+       return String.valueOf(x).equals(sb.reverse().toString());
+
+    }
+
+    public static void main(String[] args) {
+//        System.out.println(PalindromeNumber.isPalindrome(123321));
+//        System.out.println(PalindromeNumber.isPalindrome(123454321));
+//        System.out.println(PalindromeNumber.isPalindrome(122323121));
+
+
+        System.out.println(PalindromeNumber.isPalindrome2(123321));
+        System.out.println(PalindromeNumber.isPalindrome2(123454321));
+        System.out.println(PalindromeNumber.isPalindrome2(122323121));
+    }
+
 }

@@ -1,5 +1,8 @@
 package ru.alex.leetcode.easy.dynamicAlghoritm;
 
+/**
+ * https://leetcode.com/problems/is-subsequence/
+ */
 public class IsSubsequence {
     private int startPos = 0;
     private String text;
@@ -22,6 +25,7 @@ public class IsSubsequence {
         }
         return true;
     }
+
     private int findSymbolPosition(char c, int startPosition) {
         for (int j = startPosition; j < textSize; j++) {
             if (text.charAt(j) == c) {
